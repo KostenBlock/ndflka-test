@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
   <div class="content column">
-    <logo class="logo"/>
+    <a href="#"><logo class="logo"/></a>
     <div class="header__links column">
       <a href="tel:+74997057893" class="link__text">+7 (499) 705 78 93</a>
       <a href="#" class="link__text">Вопросы и ответы</a>
