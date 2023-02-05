@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 @import "assets/css/variables";
 .form {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 312px;
   gap: 24px;
 
   @media screen and (max-width: $mobile) {
