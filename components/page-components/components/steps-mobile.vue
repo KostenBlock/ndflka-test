@@ -12,7 +12,7 @@
       <p class="header center-text">Как мы работаем</p>
       <div class="steps row">
         <div v-for="(step, index) in steps" :key="step.text" class="step row">
-          <img :src="step.src" :alt="step.text">
+          <img :src="step.src" :alt="step.text" class="img contain-image">
           <p v-html="step.text" class="text center-text"/>
           <arrow-down v-if="index !== steps.length - 1" class="arrow__mobile"/>
         </div>
@@ -72,6 +72,11 @@ export default {
     .step {
       justify-items: center;
       gap: 5px;
+
+      .img {
+        width: 120px;
+        height: 120px;
+      };
 
       .text {
         font-weight: 400;

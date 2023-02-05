@@ -24,11 +24,11 @@ export default {
   components: { StepsDesktop, StepsMobile, PlainForm, ArrowDown },
   data: () => ({
     steps: [
-      { src: '/images/home-page/step-1.svg', text: 'Звонок, <br/> регистрация, заказ' },
-      { src: '/images/home-page/step-2.svg', text: 'Консультация' },
-      { src: '/images/home-page/step-3.svg', text: 'Оплата заказа, <br/> загрузка документов' },
-      { src: '/images/home-page/step-4.svg', text: 'Проверка документов, <br/> заполнение и отправка декларации' },
-      { src: '/images/home-page/step-5.svg', text: 'Поступление денег <br/> от ФНС' }
+      { src: '/images/home-page/step-1.png', text: 'Звонок, <br/> регистрация, заказ' },
+      { src: '/images/home-page/step-2.png', text: 'Консультация' },
+      { src: '/images/home-page/step-3.png', text: 'Оплата заказа, <br/> загрузка документов' },
+      { src: '/images/home-page/step-4.png', text: 'Проверка документов, <br/> заполнение и отправка декларации' },
+      { src: '/images/home-page/step-5.png', text: 'Поступление денег <br/> от ФНС' }
     ]
   })
 }

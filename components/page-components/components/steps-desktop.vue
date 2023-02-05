@@ -8,7 +8,7 @@
         :class='`step row ${index % 2 !== 0 ? "step__down" : ""}`'
       >
         <div class="picture__container">
-          <img :src="step.src" :alt="step.text" class="img">
+          <img :src="step.src" :alt="step.text" class="img contain-image">
           <arrow-down v-if="index !== steps.length - 1 && index % 2 === 0" class="arrow__down"/>
           <arrow-up v-if="index !== steps.length - 1 && index % 2 !== 0" class="arrow__up"/>
         </div>
@@ -65,7 +65,7 @@ export default {
 
     .picture__container {
       position: relative;
-      width: 121px;
+      width: 120px;
       height: 120px;
 
       .img {
