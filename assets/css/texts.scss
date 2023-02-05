@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.header {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.plain-text {
+  font-family: 'Source Sans Pro', serif;
+	font-size: 16px;
+	line-height: 24px;
+	cursor: default;
+}
+
+.center-text {
+	text-align: center;
+	cursor: default;
+}
+
+.start-text {
+	text-align: start;
+	cursor: default;
+}
+
+.end-text {
+	text-align: end;
+	cursor: default;
+}
+
+a {
+	cursor: pointer !important;
+}

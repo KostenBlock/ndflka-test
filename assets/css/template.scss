@@ -1,0 +1,67 @@
+@import 'variables.scss';
+
+// position
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  max-width: 940px;
+  margin: auto auto;
+
+  @media screen and (max-width: $tablet) {
+    max-width: 95%;
+    width: 95%;
+  }
+}
+
+.column {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.cover-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.contain-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+  display: flex;
+  align-items: flex-start;
+}
+
+.plain-gap {
+  gap: 20px;
+  grid-gap: 20px;
+}
+
+.section-dynamic-gap {
+  gap: 40px;
+  grid-gap: 40px;
+
+  @media screen and (max-width: $mac-book) {
+    gap: 30px;
+    grid-gap: 30px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    gap: 20px;
+    grid-gap: 20px;
+  }
+}
