@@ -18,7 +18,7 @@
       :text="isPhone ? 'Войти по смс-коду' : 'получить ссылку'"
     />
     <checkbox
-      label="Авторизуясь на сайте, вы соглашаетесь с политикой конфиденциальности и даете согласие на обработку персональных данных, а также подтверждаете, что Ознакомлены и согласны с условиями Договора"
+      label="Авторизуясь на сайте, вы соглашаетесь с <a href='#' class='checkbox-link'>политикой конфиденциальности</a> и даете согласие на обработку персональных данных, а также подтверждаете, что <a href='#' class='checkbox-link'>Ознакомлены и согласны с условиями Договора<a/>"
       :is-checked="isChecked"
       :change-event="() => isChecked = !isChecked"
     />
@@ -73,6 +73,11 @@ export default {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 16px;
+    };
   };
 
   .enterBy {

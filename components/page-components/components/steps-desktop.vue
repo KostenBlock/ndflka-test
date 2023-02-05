@@ -1,5 +1,5 @@
 <template>
-  <div class="main row">
+  <div class="main">
     <p class="header center-text">Как мы работаем</p>
     <div class="steps column">
       <div
@@ -42,8 +42,11 @@ export default {
 @import "assets/css/variables";
 
 .main {
+  display: grid;
+  grid-auto-flow: row;
   gap: 25px;
   padding-bottom: 30px;
+
   @media screen and (max-width: $tablet) {
     display: none;
   };

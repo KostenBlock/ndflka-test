@@ -15,8 +15,9 @@
   margin: auto auto;
 
   @media screen and (max-width: $tablet) {
-    max-width: 95%;
-    width: 95%;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -65,3 +66,8 @@
     grid-gap: 20px;
   }
 }
+
+.checkbox-link {
+  color: rgba(0, 0, 0, 0.38);
+  text-decoration: underline;
+};

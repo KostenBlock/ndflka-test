@@ -1,6 +1,6 @@
 <template>
   <div class="input__container column">
-    <p v-if="label !== ''"  class="label">{{ label }}</p>
+    <p v-if="label !== ''" v-html="label" class="label"/>
     <div
       @click="() => changeEvent()"
       class="checkbox"
@@ -48,9 +48,12 @@ export default {
     color: rgba(0, 0, 0, 0.38);
     text-align: right;
     letter-spacing: 0.4px;
+
     @media screen and (max-width: $mobile) {
       order: 2;
       text-align: start;
+      font-size: 11px;
+      line-height: 14px;
     };
   }
 

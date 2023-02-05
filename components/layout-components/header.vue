@@ -126,6 +126,7 @@ export default {
           line-height: 16px;
           padding-bottom: 15px;
           border-bottom: 2px solid transparent;
+          text-transform: uppercase;
         };
 
         .active__link {
