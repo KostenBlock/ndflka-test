@@ -22,7 +22,7 @@
       :is-checked="isChecked"
       :change-event="() => isChecked = !isChecked"
     />
-    <p @click="() => isPhone = !isPhone" class="enterBy">
+    <p @click="handleToggle" class="enterBy">
       {{ isPhone ? 'ВОЙТИ ПО EMAIL' : 'ВОЙТИ С ПОМОЩЬЮ ТЕЛЕФОНА' }}
     </p>
   </form>
@@ -53,6 +53,16 @@ export default {
   methods: {
     submit(event) {
       event.preventDefault();
+      if(this.isPhone) {
+        console.log(this.phone);
+        return;
+      }
+      console.log(this.email)
+    },
+    handleToggle() {
+      this.email = '';
+      this.phone = '';
+      this.isPhone = !this.isPhone;
     }
   }
 }
